@@ -7,7 +7,6 @@ import requests
 
 BASE = 'https://jsonplaceholder.typicode.com/'
 
-
 class PostsViews(viewsets.ModelViewSet):
     serializer_class = PostsSerializer
 
