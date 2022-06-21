@@ -18,8 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from api_.views import PostsViews
 
-router = routers.SimpleRouter()
-router.register(r'posts', PostsViews)
+router = routers.DefaultRouter()
+router.register(r'posts', PostsViews, basename='posts')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
